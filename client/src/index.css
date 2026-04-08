@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gray-950 text-gray-100 font-sans;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-gray-900;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-gray-700 rounded;
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-gray-800 border border-gray-700 rounded-xl p-5;
+  }
+  
+  .btn-primary {
+    @apply bg-green-500 hover:bg-green-400 text-white font-semibold px-4 py-2 rounded-lg transition-all duration-200;
+  }
+  
+  .btn-danger {
+    @apply bg-red-600 hover:bg-red-500 text-white font-semibold px-4 py-2 rounded-lg transition-all duration-200;
+  }
+  
+  .btn-secondary {
+    @apply bg-gray-700 hover:bg-gray-600 text-white font-semibold px-4 py-2 rounded-lg transition-all duration-200;
+  }
+  
+  .input {
+    @apply bg-gray-900 border border-gray-700 text-white rounded-lg px-4 py-2.5 w-full focus:outline-none focus:border-green-500 transition-colors;
+  }
+  
+  .label {
+    @apply text-gray-400 text-sm font-medium mb-1 block;
+  }
+  
+  .positive {
+    @apply text-green-400;
+  }
+  
+  .negative {
+    @apply text-red-400;
+  }
+  
+  .badge-active {
+    @apply bg-green-500/20 text-green-400 text-xs font-semibold px-2.5 py-0.5 rounded-full;
+  }
+  
+  .badge-inactive {
+    @apply bg-gray-600/50 text-gray-400 text-xs font-semibold px-2.5 py-0.5 rounded-full;
+  }
+
+  .gold-text {
+    @apply text-yellow-400;
+  }
+
+  .stat-card {
+    @apply card flex flex-col gap-1;
+  }
+
+  .nav-link {
+    @apply flex items-center gap-3 px-4 py-3 rounded-lg text-gray-400 hover:text-white hover:bg-gray-700/50 transition-all;
+  }
+
+  .nav-link.active {
+    @apply text-white bg-gray-700/80 border border-gray-600;
+  }
+}
+
+.ticker-positive { color: #4ade80; }
+.ticker-negative { color: #f87171; }
+
+/* Animations */
+@keyframes pulse-green {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+.pulse-green { animation: pulse-green 2s ease-in-out infinite; }
+
+@keyframes slide-up {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+.slide-up { animation: slide-up 0.3s ease-out; }
