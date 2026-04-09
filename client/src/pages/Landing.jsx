@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import { Link } from 'react-router-dom';
 import { TrendingUp, Bot, Globe, Shield, Zap, BarChart3, Users, Wallet, ArrowRight, CheckCircle } from 'lucide-react';
 
@@ -46,7 +46,7 @@ export default function Landing() {
         <div className="relative max-w-4xl mx-auto">
           <div className="inline-flex items-center gap-2 bg-green-500/10 border border-green-500/30 rounded-full px-4 py-1.5 mb-6">
             <span className="w-2 h-2 bg-green-400 rounded-full pulse-green" />
-            <span className="text-green-400 text-sm font-medium">Demo Platform — No Real Money Required</span>
+            <span className="text-green-400 text-sm font-medium">Demo Platform â€” No Real Money Required</span>
           </div>
 
           <h1 className="text-5xl lg:text-7xl font-black mb-6 leading-tight">
@@ -56,7 +56,7 @@ export default function Landing() {
             </span>
           </h1>
           <p className="text-xl text-gray-400 mb-10 max-w-2xl mx-auto leading-relaxed">
-            TradeVault gives you institutional-grade algorithmic trading tools. Deploy bots, trade Forex, Crypto, and Futures — all in a risk-free demo environment.
+            TradeVault gives you institutional-grade algorithmic trading tools. Deploy bots, trade Forex, Crypto, and Futures â€” all in a risk-free demo environment.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
@@ -70,8 +70,8 @@ export default function Landing() {
 
           {/* Demo credentials */}
           <div className="inline-flex flex-col sm:flex-row items-center gap-3 bg-gray-800 border border-gray-700 rounded-xl px-6 py-4">
-            <span className="text-yellow-400 font-semibold text-sm">🎮 Try Demo Account:</span>
-            <code className="text-green-400 text-sm bg-gray-900 px-3 py-1 rounded font-mono">demo@tradevault.com</code>
+            <span className="text-yellow-400 font-semibold text-sm">ðŸŽ® Try Demo Account:</span>
+            <code className="text-green-400 text-sm bg-gray-900 px-3 py-1 rounded font-mono">tradevaultdemo@bluesapps.com</code>
             <span className="text-gray-500 hidden sm:block">/</span>
             <code className="text-green-400 text-sm bg-gray-900 px-3 py-1 rounded font-mono">Demo@1234</code>
           </div>
@@ -142,7 +142,7 @@ export default function Landing() {
       <section className="py-20 px-6">
         <div className="max-w-2xl mx-auto text-center">
           <h2 className="text-4xl font-black mb-4">Ready to Trade Smarter?</h2>
-          <p className="text-gray-400 mb-8">Join thousands of traders using TradeVault's algorithmic tools. Start with $10,000 demo capital — completely free.</p>
+          <p className="text-gray-400 mb-8">Join thousands of traders using TradeVault's algorithmic tools. Start with $10,000 demo capital â€” completely free.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link to="/signup" className="btn-primary flex items-center justify-center gap-2 px-8 py-4 text-base">
               Create Free Account <ArrowRight size={18} />
@@ -166,13 +166,14 @@ export default function Landing() {
               <TrendingUp size={14} className="text-white" />
             </div>
             <span className="font-bold">TradeVault</span>
-            <span className="text-gray-500 text-sm ml-2">© 2024</span>
+            <span className="text-gray-500 text-sm ml-2">Â© 2024</span>
           </div>
           <p className="text-gray-500 text-sm text-center">
-            ⚠️ TradeVault is a <strong className="text-yellow-400">demo platform</strong>. No real money is used or at risk. For educational purposes only.
+            âš ï¸ TradeVault is a <strong className="text-yellow-400">demo platform</strong>. No real money is used or at risk. For educational purposes only.
           </p>
         </div>
       </footer>
     </div>
   );
 }
+

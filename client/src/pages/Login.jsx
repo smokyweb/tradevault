@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+﻿import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { TrendingUp, Eye, EyeOff } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
@@ -25,7 +25,7 @@ export default function Login() {
     }
   };
 
-  const fillDemo = () => setForm({ email: 'demo@tradevault.com', password: 'Demo@1234' });
+  const fillDemo = () => setForm({ email: 'tradevaultdemo@bluesapps.com', password: 'Demo@1234' });
 
   return (
     <div className="min-h-screen bg-gray-950 flex flex-col items-center justify-center px-4">
@@ -43,7 +43,7 @@ export default function Login() {
 
         {/* Demo credentials */}
         <button onClick={fillDemo} className="w-full bg-yellow-500/10 border border-yellow-500/30 rounded-xl px-4 py-3 mb-6 text-sm text-yellow-400 hover:bg-yellow-500/20 transition-colors">
-          🎮 Click to fill demo credentials: <code className="font-mono">demo@tradevault.com / Demo@1234</code>
+          ðŸŽ® Click to fill demo credentials: <code className="font-mono">tradevaultdemo@bluesapps.com / Demo@1234</code>
         </button>
 
         <form onSubmit={handleSubmit} className="card space-y-5">
@@ -67,7 +67,7 @@ export default function Login() {
               <input
                 type={showPass ? 'text' : 'password'}
                 className="input pr-10"
-                placeholder="••••••••"
+                placeholder="â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢"
                 value={form.password}
                 onChange={e => setForm({ ...form, password: e.target.value })}
                 required
@@ -90,3 +90,4 @@ export default function Login() {
     </div>
   );
 }
+
